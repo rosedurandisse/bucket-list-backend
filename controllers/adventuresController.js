@@ -11,13 +11,22 @@ adventures.get("/", (request, response) => {
   response.json(adventureArray);
 });
 
-//get 1 activity
 adventures.get("/:id", (request, response) => {
   const { id } = request.params;
-  let foundAdventure = adventureArray.adventure.find(
-    (eachElement) => eachElement.id == id
-  );
+  let foundAdventure = "";
 
+  //get activity by letter
+  if (id.match(/[a-zA-Z]/g)) {
+    foundAdventure = adventureArray.adventures.filter((eachElement) => {
+      return eachElement.title.toLowerCase().includes(id);
+    });
+
+    //get activity by number
+  } else {
+    foundAdventure = adventureArray.adventures.find(
+      (eachElement) => eachElement.id == id
+    );
+  }
   response.json(foundAdventure);
 });
 
