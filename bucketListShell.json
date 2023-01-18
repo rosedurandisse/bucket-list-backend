@@ -1,0 +1,21 @@
+{
+    "adventures": [
+        {
+            "id": "1",
+            "title": "Ride a historical roller coaster",
+            "description": "Visit a park filled with history, fun, beaches and roller coasters"
+        }, {
+            "id": "2",
+            "title": "Skydive",
+            "description": "Be filled with adrenaline as you jump out of a tiny plane"
+        }, {
+            "id": "3",
+            "title": "Cooking Class",
+            "description": "Taste the cuisine of places you've never been before"
+        }, {
+            "id": "4",
+            "title": "Spa/Massage",
+            "description": "Take a load off as someone eases the stress of life away from the current moment"
+        }
+    ]
+}
